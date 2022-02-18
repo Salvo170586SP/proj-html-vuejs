@@ -40,8 +40,8 @@
           <a href="#" class="explore-btn px-4">Explore More</a>
         </div>
 
-        <div class="col-8">
-          <img src="../assets/images/header.png" alt="header-img" />
+        <div class="col-8 px-5">
+            <img src="../assets/images/header.png" alt="header-img" />
         </div>
       </div>
     </div>
@@ -75,5 +75,13 @@ a {
 
 h1 {
   margin-top: 50px;
+}
+
+span{
+    font-weight: 400;
+}
+
+p{
+ color: #AAAAAA;
 }
 </style>
