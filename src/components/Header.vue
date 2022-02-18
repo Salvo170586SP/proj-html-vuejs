@@ -7,14 +7,9 @@
           <img src="../assets/images/white-logo-2.png" alt="logo" />
         </div>
         <div class="col-8">
-          <nav>
-            <ul class="d-flex justify-content-end">
-              <li class="mx-2"><a href="#">item</a></li>
-              <li class="mx-2"><a href="#">item</a></li>
-              <li class="mx-2"><a href="#">item</a></li>
-              <li class="mx-2"><a href="#">item</a></li>
-              <li class="mx-2"><a href="#">item</a></li>
-              <li class="mx-2"><a href="#">item</a></li>
+          <nav class="d-flex justify-content-end">
+            <ul v-for="(item, index) in items" :key="index" class="p-0">
+              <li><a href="#">{{ item.text }}</a></li>
             </ul>
           </nav>
         </div>
@@ -62,6 +57,7 @@ a {
   border-radius: 25px;
   padding: 10px;
 }
+
 .sing-in-btn {
   background-color: blue;
 }
