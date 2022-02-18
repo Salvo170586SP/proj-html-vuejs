@@ -83,6 +83,10 @@ p {
   color: $paragraph-color;
 }
 
+img{
+  width: 100%;
+}
+
 /* HEADER */
 header {
   background-color: $bg-blue;
