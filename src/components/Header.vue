@@ -9,7 +9,9 @@
         <div class="col-8">
           <nav class="d-flex justify-content-end">
             <ul v-for="(item, index) in items" :key="index" class="p-0">
-              <li><a href="#">{{ item.text }}</a></li>
+              <li>
+                <a href="#">{{ item.text }}</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -21,22 +23,25 @@
       <!-- header-bottom/spotlyght -->
       <div id="header-bottom" class="row align-items-center">
         <div class="col-4 pt-5">
-          <h1 class="fs-1 mb-3">
-            Business Planning
-            <span>Digital Tecnology</span>
-            Modern Solution!
-          </h1>
-          <p class="mb-5">
-            When, while the lovely valley teems with vapour around meand the
-            meridian sun strikes the upper surface.
-          </p>
-
-          <a href="#" class="try-btn px-4 mx-3">Try It Now</a>
-          <a href="#" class="explore-btn px-4">Explore More</a>
+          <div class="row">
+            <div class="col-12 title-section">Business Planning</div>
+            <div class="col-12 subtitle-section">Digital Tecnology</div>
+            <div class="col-12 title-section">Modern Solution!</div>
+            <div class="col-12">
+              <p class="mb-5">
+                When, while the lovely valley teems with vapour around meand the
+                meridian sun strikes the upper surface.
+              </p>
+            </div>
+            <div class="col-12">
+              <a href="#" class="try-btn px-4 mx-3">Try It Now</a>
+              <a href="#" class="explore-btn px-4">Explore More</a>
+            </div>
+          </div>
         </div>
 
         <div class="col-8 px-5">
-            <img src="../assets/images/header.png" alt="header-img" />
+          <img src="../assets/images/header.png" alt="header-img" />
         </div>
       </div>
     </div>
@@ -56,8 +61,8 @@ export default {
 /* link button */
 a {
   border-radius: 25px;
-  padding: 10px;
-}
+  padding: 10px 15px;
+} 
 
 .sing-in-btn,
 .try-btn,
@@ -65,22 +70,34 @@ a {
   background-color: $btn-blue;
 }
 
-
 /* text */
 h1 {
   margin-top: 50px;
 }
 
-span{
-    font-weight: 400;
+span {
+  font-weight: 400;
 }
 
-p{
- color: $paragraph-color;
+p {
+  color: $paragraph-color;
 }
 
 /* HEADER */
 header {
   background-color: $bg-blue;
 }
+
+.title-section{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.subtitle-section{
+    font-size: 3rem;
+    color: white;
+}
+
+
 </style>

@@ -1,6 +1,7 @@
 <template>
    <section id="your-project" class="d-flex align-items-center">
         <div class="container">
+            <!-- image section -->
           <div class="row">
             <div class="col-6">
               <figure>
@@ -8,6 +9,7 @@
               </figure>
             </div>
             <div class="col-6">
+                <!-- text section -->
               <div class="row">
                 <div class="col-12 text-white">Start Your Project</div>
                 <div class="col-12 title-section ">Grow Your Business</div>

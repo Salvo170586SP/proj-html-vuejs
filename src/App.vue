@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <Header :items="headerItems" />
+      <Header :items="headerItems" />
     <main>
       <SectionServices />
       <SectionProject />
+      <SectionPortfolio />
     </main>
   </div>
 </template>
@@ -12,10 +13,11 @@
 import Header from "./components/Header.vue";
 import SectionServices from "./components/SectionServices.vue";
 import SectionProject from "./components/SectionProject.vue";
+import SectionPortfolio from "./components/SectionPortfolio.vue";
 
 export default {
   name: "App",
-  components: { Header, SectionServices, SectionProject },
+  components: { Header, SectionServices, SectionProject, SectionPortfolio },
   data() {
     return {
       headerItems: [
@@ -44,6 +46,4 @@ export default {
   border: 1px dotted blue;
 }
 /* da eliminare  */
-
-
 </style>
