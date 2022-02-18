@@ -76,7 +76,7 @@ span{
 }
 
 p{
- color: $paragraph-header;
+ color: $paragraph-color;
 }
 
 /* HEADER */

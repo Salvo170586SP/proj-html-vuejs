@@ -1,16 +1,9 @@
 <template>
   <div id="app">
-    <Header :items="headerItems"  />
+    <Header :items="headerItems" />
     <main>
       <SectionServices />
-      <section id="your-project">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">IMG</div>
-            <div class="col-6">TEXT</div>
-          </div>
-        </div>
-      </section>
+      <SectionProject />
     </main>
   </div>
 </template>
@@ -18,10 +11,11 @@
 <script>
 import Header from "./components/Header.vue";
 import SectionServices from "./components/SectionServices.vue";
+import SectionProject from "./components/SectionProject.vue";
 
 export default {
   name: "App",
-  components: { Header, SectionServices },
+  components: { Header, SectionServices, SectionProject },
   data() {
     return {
       headerItems: [
@@ -50,10 +44,6 @@ export default {
   border: 1px dotted blue;
 }
 /* da eliminare  */
-
-#your-project{
-  background-color: $bg-blue;
-}
 
 
 </style>
