@@ -50,27 +50,23 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../assets/scss/style.scss";
 
 /* link button */
-
 a {
   border-radius: 25px;
   padding: 10px;
 }
 
-.sing-in-btn {
-  background-color: $btn-blue;
-}
-
-.try-btn {
-  background-color: $try-btn;
-}
+.sing-in-btn,
+.try-btn,
 .explore-btn {
   background-color: $btn-blue;
 }
 
+
+/* text */
 h1 {
   margin-top: 50px;
 }
@@ -81,5 +77,10 @@ span{
 
 p{
  color: $paragraph-header;
+}
+
+/* HEADER */
+header {
+  background-color: $header-bg;
 }
 </style>

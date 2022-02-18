@@ -1,7 +1,19 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
+/* utility */
+li {
+    list-style-type: none;
+}
+  
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
 /* colors */
 $header-bg: #030535;
-$paragraph-header: #AAAAAA;
-$try-btn: #f9636b;
+$paragraph-header: #818A91;
+$red-span: #f9636b;
 $btn-blue: #527ceb;

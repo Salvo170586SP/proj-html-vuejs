@@ -43,18 +43,6 @@ export default {
 }
 /* da eliminare  */
 
-/* utility */
-li {
-  list-style-type: none;
-}
 
-a {
-  color: white;
-  text-decoration: none;
-}
 
-/* HEADER */
-header {
-  background-color: $header-bg;
-}
 </style>
