@@ -23,7 +23,7 @@
         <div class="col-4 pt-5">
           <h1 class="fs-1 mb-3">
             Business Planning
-            <span>Digital Tecnoogy</span>
+            <span>Digital Tecnology</span>
             Modern Solution!
           </h1>
           <p class="mb-5">
@@ -81,6 +81,6 @@ p{
 
 /* HEADER */
 header {
-  background-color: $header-bg;
+  background-color: $bg-blue;
 }
 </style>

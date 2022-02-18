@@ -3,6 +3,14 @@
     <Header :items="headerItems"  />
     <main>
       <SectionServices />
+      <section id="your-project">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">IMG</div>
+            <div class="col-6">TEXT</div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 </template>
@@ -43,6 +51,9 @@ export default {
 }
 /* da eliminare  */
 
+#your-project{
+  background-color: $bg-blue;
+}
 
 
 </style>
