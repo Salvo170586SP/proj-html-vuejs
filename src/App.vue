@@ -1,6 +1,23 @@
 <template>
   <div id="app">
     <Header />
+    <main>
+      <section id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">Our Services</div>
+            <div class="col-12 text-center">What We Do</div>
+            <div class="col-12 text-center">When wile the lovely valley teems whit vapour around meand the</div>
+          </div>
+          <div class="row">
+            <div class="col-3">item</div>
+            <div class="col-3">item</div>
+            <div class="col-3">item</div>
+            <div class="col-3">item</div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
 </template>
 
