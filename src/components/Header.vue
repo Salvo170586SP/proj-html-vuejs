@@ -50,7 +50,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "../assets/scss/style.scss";
+
 /* link button */
 
 a {
@@ -59,14 +61,14 @@ a {
 }
 
 .sing-in-btn {
-  background-color: blue;
+  background-color: $btn-blue;
 }
 
 .try-btn {
-  background-color: #f9636b;
+  background-color: $try-btn;
 }
 .explore-btn {
-  background-color: blue;
+  background-color: $btn-blue;
 }
 
 h1 {
@@ -78,6 +80,6 @@ span{
 }
 
 p{
- color: #AAAAAA;
+ color: $paragraph-header;
 }
 </style>
