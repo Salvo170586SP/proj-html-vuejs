@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-      <Header :items="headerItems" />
+    <Header :items="headerItems" />
     <main>
       <SectionServices />
       <SectionProject />
       <SectionPortfolio />
       <SectionPrice />
+      <SectionBlog />
     </main>
   </div>
 </template>
@@ -16,10 +17,18 @@ import SectionServices from "./components/SectionServices.vue";
 import SectionProject from "./components/SectionProject.vue";
 import SectionPortfolio from "./components/SectionPortfolio.vue";
 import SectionPrice from "./components/SectionPrice.vue";
+import SectionBlog from "./components/SectionBlog.vue";
 
 export default {
   name: "App",
-  components: { Header, SectionServices, SectionProject, SectionPortfolio, SectionPrice },
+  components: {
+    Header,
+    SectionServices,
+    SectionProject,
+    SectionPortfolio,
+    SectionPrice,
+    SectionBlog
+  },
   data() {
     return {
       headerItems: [
