@@ -5,6 +5,7 @@
       <SectionServices />
       <SectionProject />
       <SectionPortfolio />
+      <SectionPrice />
     </main>
   </div>
 </template>
@@ -14,10 +15,11 @@ import Header from "./components/Header.vue";
 import SectionServices from "./components/SectionServices.vue";
 import SectionProject from "./components/SectionProject.vue";
 import SectionPortfolio from "./components/SectionPortfolio.vue";
+import SectionPrice from "./components/SectionPrice.vue";
 
 export default {
   name: "App",
-  components: { Header, SectionServices, SectionProject, SectionPortfolio },
+  components: { Header, SectionServices, SectionProject, SectionPortfolio, SectionPrice },
   data() {
     return {
       headerItems: [
