@@ -12,33 +12,97 @@
 
       <div class="row text-center">
         <!-- card-price -->
-        <div class="col-4 bg-white radius-25">
-          <div class="row">
-            <div class="col-12 py-3">
-              <h2>Designing</h2>
-              <p>PROCESS</p>
+        <div class="col-4 ">
+
+          <div class="card-price bg-white radius-25 p-2">
+            <div class="row">
+              <div class="col-12 py-3">
+                <h2>Designing</h2>
+                <p>PROCESS</p>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <span class="size-price"> 40</span>
-              <p>per Month</p>
-            </div>
-            <div class="col-12">
-              <ul>
-                <li><strong>Creative</strong> Design Enable</li>
-                <li><strong>Vibrant</strong> Color Usage</li>
-                <li><strong>Eye</strong> Catching Design</li>
-                <li><strong>Extreme</strong> Typography</li>
-                <li><strong>Exceptional</strong> Design</li>
-              </ul>
-            </div>
-            <div class="col-12 my-5">
-              <a class="order-btn" href="#">Order Now</a>
+            <div class="row">
+              <div class="col-12">
+                <span class="size-price"> 40</span>
+                <p>per Month</p>
+              </div>
+              <div class="col-12">
+                <ul>
+                  <li><strong>Creative</strong> Design Enable</li>
+                  <li><strong>Vibrant</strong> Color Usage</li>
+                  <li><strong>Eye</strong> Catching Design</li>
+                  <li><strong>Extreme</strong> Typography</li>
+                  <li><strong>Exceptional</strong> Design</li>
+                </ul>
+              </div>
+              <div class="col-12 my-5">
+                <a class="order-btn-red fw-bold" href="#">Order Now <i class="fa-solid fa-right-long ms-4"></i></a>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="col-4 ">
+          <div class="card-price text-white radius-25 p-2">
+            <div class="row">
+              <div class="col-12 py-3">
+                <h2>Developing</h2>
+                <p>PRODUCT</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <span class="size-price">60</span>
+                <p>per Month</p>
+              </div>
+              <div class="col-12">
+                <ul>
+                  <li><strong>Creative</strong> Design Enable</li>
+                  <li><strong>Vibrant</strong> Color Usage</li>
+                  <li><strong>Eye</strong> Catching Design</li>
+                  <li><strong>Extreme</strong> Typography</li>
+                  <li><strong>Exceptional</strong> Design</li>
+                </ul>
+              </div>
+              <div class="col-12 my-5">
+                <a class="order-btn-white fw-bold" href="#">Order Now <i class="fa-solid fa-right-long ms-4"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 ">
+          <div class="card-price bg-white radius-25 p-2">
+            <div class="row">
+              <div class="col-12 py-3">
+                <h2>Supporting</h2>
+                <p>CLIENTS</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <span class="size-price"> 80</span>
+                <p>per Month</p>
+              </div>
+              <div class="col-12">
+                <ul>
+                  <li><strong>Creative</strong> Design Enable</li>
+                  <li><strong>Vibrant</strong> Color Usage</li>
+                  <li><strong>Eye</strong> Catching Design</li>
+                  <li><strong>Extreme</strong> Typography</li>
+                  <li><strong>Exceptional</strong> Design</li>
+                </ul>
+              </div>
+              <div class="col-12 my-5">
+                <a class="order-btn-red fw-bold" href="#">Order Now <i class="fa-solid fa-right-long ms-4"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         
+
+       
       </div>
     </div>
   </section>
@@ -57,12 +121,16 @@ export default {
   background-image: linear-gradient(to bottom, $bg-blue 60%, white 50%);
 }
 
+.card-price{
+    background-color: $red-span;
+}
+
 .red-span {
   color: $red-span;
 }
 
 .size-price {
-  font-size: 9rem;
+  font-size: 6rem;
   font-weight: bold;
 }
 
@@ -76,10 +144,16 @@ ul {
 
 a {
   border-radius: 25px;
-  padding: 10px 15px;
+  padding: 10px 25px;
 }
 
-.order-btn {
+a.order-btn-red {
   background-color: $red-span;
 }
+
+a.order-btn-white{
+    background-color: white;
+    color: $red-span;
+}
+
 </style>
