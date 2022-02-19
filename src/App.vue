@@ -7,6 +7,7 @@
       <SectionPortfolio />
       <SectionPrice />
       <SectionBlog />
+      <SectionTestimonial />
     </main>
   </div>
 </template>
@@ -18,6 +19,7 @@ import SectionProject from "./components/SectionProject.vue";
 import SectionPortfolio from "./components/SectionPortfolio.vue";
 import SectionPrice from "./components/SectionPrice.vue";
 import SectionBlog from "./components/SectionBlog.vue";
+import SectionTestimonial from "./components/SectionTestimonial.vue";
 
 export default {
   name: "App",
@@ -27,7 +29,8 @@ export default {
     SectionProject,
     SectionPortfolio,
     SectionPrice,
-    SectionBlog
+    SectionBlog,
+    SectionTestimonial
   },
   data() {
     return {
