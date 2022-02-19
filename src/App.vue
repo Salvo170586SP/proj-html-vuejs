@@ -10,6 +10,18 @@
       <SectionTestimonial />
       <SectionSubscribe />
     </main>
+    <footer>
+      <div id="footer-top" class="text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">item</div>
+            <div class="col-3">item</div>
+            <div class="col-3">item</div>
+            <div class="col-3">item</div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -63,4 +75,10 @@ export default {
   border: 1px dotted blue;
 }
 /* da eliminare  */
+
+#footer-top{
+  height: 400px;
+  background-color: $bg-blue;
+}
+
 </style>

@@ -36,11 +36,11 @@ export default {
 
 #subscribe {
   height: 400px;
-  background-image: linear-gradient(to bottom, white 50%, $bg-blue 50%);
+  background-image: linear-gradient(to bottom, $bg-white 50%, $bg-blue 50%);
 }
 
 .card-subscribe{
-    height: 300px;
+    height: 260px;
     background-color: $red-span;
     border-radius: 30px;
 }
@@ -57,7 +57,7 @@ h2{
 .input-subscribe {
     width: 365px;
   text-align: end;
-  background-color: white;
+  background-color: $bg-white;
   border-radius: 25px;
   padding: 5px;
 }
@@ -71,8 +71,8 @@ input{
 button{
     border-radius: 25px;
     padding: 8px;
-    background-color: blue;
-    color: white;
+    background-color: $bg-blue;
+    color: $bg-white;
     border: none;
 }
 </style>
