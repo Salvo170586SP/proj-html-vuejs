@@ -6,7 +6,7 @@
 
             <!-- card-subscribe -->
           <div class="card-subscribe text-white d-flex align-items-center">
-            <div class="text-subscribe">
+            <div class="text-subscribe px-5">
               <h2>We Offer Awesome Services</h2>
               <p>
                 When, while the lovely valley teems with vapour around meand the
@@ -14,7 +14,7 @@
               </p>
             </div>
             <div class="input-subscribe">
-              <input type="text" />
+              <input type="text" placeholder="Enter Your Mail Address" />
               <button>Subscribe</button>
             </div>
           </div>
@@ -46,11 +46,33 @@ export default {
 }
 
 .text-subscribe {
-  width: 50%;
+  width: 70%;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .input-subscribe {
-  width: 50%;
+    width: 365px;
   text-align: end;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+input{
+    width: 250px;
+    outline: none;
+    border: 0;
+}
+
+button{
+    border-radius: 25px;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    border: none;
 }
 </style>
