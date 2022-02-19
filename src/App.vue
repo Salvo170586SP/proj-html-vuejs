@@ -12,24 +12,7 @@
     </main>
     <footer>
       <FooterTop />
-      <div id="footer-bottom" class="text-white">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-12 d-flex justify-content-between align-items-center"
-            >
-              <p>@2020 Phlox.All Rights Reserved</p>
-
-              <div class="social">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <FooterBottom />
     </footer>
   </div>
 </template>
@@ -44,6 +27,7 @@ import SectionBlog from "./components/SectionBlog.vue";
 import SectionTestimonial from "./components/SectionTestimonial.vue";
 import SectionSubscribe from "./components/SectionSubscribe.vue";
 import FooterTop from "./components/FooterTop.vue";
+import FooterBottom from "./components/FooterBottom.vue";
 
 export default {
   name: "App",
@@ -57,6 +41,7 @@ export default {
     SectionTestimonial,
     SectionSubscribe,
     FooterTop,
+    FooterBottom
   },
   data() {
     return {
@@ -87,16 +72,4 @@ export default {
 }
 /* da eliminare  */
 
-#footer-bottom {
-  height: 80px;
-  background-color: $bg-blue;
-}
-
-p{
-  color: $paragraph-color;
-}
-
-i {
-  margin-left: 20px;
-}
 </style>
