@@ -14,14 +14,15 @@
         <!-- card-price -->
         <div class="col-4">
           <div class="card-price bg-white radius-25 p-2">
+            <span class="bg-numb">40</span>
             <div class="row">
-              <div class="col-12 py-3">
+              <div class="col-12 py-3 z-index">
                 <h2>Designing</h2>
                 <p>PROCESS</p>
               </div>
             </div>
             <div class="row">
-              <div class="col-12">
+              <div class="col-12 z-index">
                 <span class="size-price"> 40</span>
                 <p>Per Month</p>
               </div>
@@ -45,14 +46,15 @@
 
         <div class="col-4">
           <div class="card-price red-card text-white radius-25 p-2">
+            <span class="bg-numb">60</span>
             <div class="row">
-              <div class="col-12 py-3">
+              <div class="col-12 py-3 z-index">
                 <h2>Developing</h2>
                 <p>PRODUCT</p>
               </div>
             </div>
             <div class="row">
-              <div class="col-12">
+              <div class="col-12 z-index">
                 <span class="size-price">60</span>
                 <p>Per Month</p>
               </div>
@@ -76,14 +78,15 @@
 
         <div class="col-4">
           <div class="card-price bg-white radius-25 p-2">
+            <span class="bg-numb">80</span>
             <div class="row">
-              <div class="col-12 py-3">
+              <div class="col-12 py-3 z-index">
                 <h2>Supporting</h2>
                 <p>CLIENTS</p>
               </div>
             </div>
             <div class="row">
-              <div class="col-12">
+              <div class="col-12 z-index">
                 <span class="size-price"> 80</span>
                 <p>Per Month</p>
               </div>
@@ -120,6 +123,24 @@ export default {
 #price-list {
   height: 850px;
   background-image: linear-gradient(to bottom, $bg-blue 60%, white 50%);
+
+  .card-price {
+    position: relative;
+
+    .bg-numb {
+      font-size: 18rem;
+      font-weight: bold;
+      color: darkgray;
+      opacity: 0.3;
+      position: absolute;
+      top: -128px;
+      right: -7px;
+    }
+
+    .z-index{
+      z-index: 1;
+    }
+  }
 
   .red-card {
     background: rgb(0, 29, 36);
