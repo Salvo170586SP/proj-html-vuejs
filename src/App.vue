@@ -11,7 +11,7 @@
       <SectionSubscribe />
     </main>
     <footer>
-      <FooterTop />
+      <FooterTop :links="quickLinks" />
       <FooterBottom />
     </footer>
   </div>
@@ -53,6 +53,12 @@ export default {
         { url: "#", text: "Contact", active: false },
         { url: "#", text: "Portfolio", active: false },
       ],
+
+      quickLinks:[
+        {url:'#', text: 'Services', active: false},
+        {url:'#', text: 'Contact', active: false},
+        {url:'#', text: 'Blog', active: false},
+      ]
     };
   },
 };

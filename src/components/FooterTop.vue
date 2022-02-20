@@ -11,10 +11,8 @@
             </div>
             <div class="col-3 px-5">
               <h5>Quick links</h5>
-              <ul class="p-0">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Blog</a></li>
+              <ul class="p-0" v-for="(link, id) in links" :key="id">
+                <li><a href="#">{{link.text}}</a></li>
               </ul>
             </div>
             <div class="col-3 px-5">
@@ -43,6 +41,7 @@
 <script>
 export default {
     name: 'FooterTop',
+    props:['links']
 }
 </script>
 
