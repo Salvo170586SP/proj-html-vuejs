@@ -34,8 +34,8 @@
               </p>
             </div>
             <div class="col-12">
-              <a href="#" class="try-btn px-4 mx-3">Try It Now</a>
-              <a href="#" class="explore-btn px-4">Explore More</a>
+              <a href="#" class="try-btn px-4 ">Try It Now</a>
+              <a href="#" class="explore-btn px-4 ms-4">Explore More</a>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
   <section id="services" class="d-flex align-items-center">
-    <div class="container ">
+    <div class="container">
       <div class="row py-5">
         <div class="col-12 text-center"><span>Our Services</span></div>
         <div class="col-12 h2 text-center"><strong>What</strong> We Do</div>
@@ -10,7 +10,7 @@
       </div>
 
       <!-- card services -->
-      <div class="row text-center align-items-end card-services ">      
+      <div class="row text-center align-items-end card-services">
         <div class="col-3">
           <div class="row">
             <div class="col-12 d-flex justify-content-center">
@@ -94,15 +94,21 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/style.scss";
 
-#services{
-    height: 850px;
+#services {
+  height: 850px;
 }
 
 /* utility */
 a {
   border-radius: 25px;
-  padding: 10px;
-  background-color: $btn-blue;
+  padding: 10px 15px;
+  background: rgb(0, 29, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 29, 36, 1) 0%,
+    rgba(100, 133, 145, 1) 0%,
+    rgba(227, 18, 47, 1) 100%
+  );
 }
 
 span {
@@ -119,7 +125,7 @@ img {
 
 /* CARD-SERVICES */
 
-.card-services{
-    margin-bottom: 200px;
+.card-services {
+  margin-bottom: 200px;
 }
 </style>
