@@ -39,7 +39,7 @@
                 meridian sun s...
               </p>
             </div>
-            <div class="link-card">
+            <div class="link-card my-5">
               <a class="read-btn" href="#">Read More</a>
             </div>
           </div>
@@ -55,7 +55,7 @@
                 meridian sun s...
               </p>
             </div>
-            <div class="link-card">
+            <div class="link-card my-5">
               <a class="read-btn" href="#">Read More</a>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default {
 
 .card-blog {
   border-radius: 25px;
-  height: 340px;
+  height: 380px;
 }
 
 .bg-img {
@@ -94,8 +94,8 @@ export default {
 }
 
 .bg-blue {
-  background-color: $bg-blue;
-}
+background: rgb(1,3,11);
+background: linear-gradient(159deg, rgba(1,3,11,1) 0%, rgba(0,3,25,1) 0%, rgba(18,134,227,1) 150%);}
 
 .w-text {
   width: 70%;
