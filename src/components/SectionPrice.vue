@@ -12,8 +12,7 @@
 
       <div class="row text-center">
         <!-- card-price -->
-        <div class="col-4 ">
-
+        <div class="col-4">
           <div class="card-price bg-white radius-25 p-2">
             <div class="row">
               <div class="col-12 py-3">
@@ -36,13 +35,15 @@
                 </ul>
               </div>
               <div class="col-12 my-5">
-                <a class="red-btn fw-bold" href="#">Order Now <i class="fa-solid fa-right-long ms-4"></i></a>
+                <a class="red-btn fw-bold" href="#"
+                  >Order Now <i class="fa-solid fa-right-long ms-4"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-4 ">
+        <div class="col-4">
           <div class="card-price red-card text-white radius-25 p-2">
             <div class="row">
               <div class="col-12 py-3">
@@ -65,13 +66,15 @@
                 </ul>
               </div>
               <div class="col-12 my-5">
-                <a class="order-btn-white fw-bold" href="#">Order Now <i class="fa-solid fa-right-long ms-4"></i></a>
+                <a class="order-btn-white fw-bold" href="#"
+                  >Order Now <i class="fa-solid fa-right-long ms-4"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-4 ">
+        <div class="col-4">
           <div class="card-price bg-white radius-25 p-2">
             <div class="row">
               <div class="col-12 py-3">
@@ -94,15 +97,13 @@
                 </ul>
               </div>
               <div class="col-12 my-5">
-                <a class="red-btn fw-bold" href="#">Order Now <i class="fa-solid fa-right-long ms-4"></i></a>
+                <a class="red-btn fw-bold" href="#"
+                  >Order Now <i class="fa-solid fa-right-long ms-4"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-
-        
-
-       
       </div>
     </div>
   </section>
@@ -119,48 +120,50 @@ export default {
 #price-list {
   height: 850px;
   background-image: linear-gradient(to bottom, $bg-blue 60%, white 50%);
-}
 
-.card-price{
-    background-color: $red-span;
-}
+  .red-card {
+    background: rgb(0, 29, 36);
+    background: linear-gradient(
+      153deg,
+      rgba(0, 29, 36, 1) 0%,
+      rgba(100, 133, 145, 1) 0%,
+      rgba(227, 18, 47, 1) 100%
+    );
+  }
 
-.red-card{
-  background: rgb(0,29,36);
-  background: linear-gradient(153deg, rgba(0,29,36,1) 0%, rgba(100,133,145,1) 0%, rgba(227,18,47,1) 100%);
-}
-
-.red-span {
-  color: $red-span;
-}
-
-.size-price {
-  font-size: 6rem;
-  font-weight: bold;
-}
-
-ul {
-  line-height: 35px;
-}
-
-.radius-25 {
-  border-radius: 25px;
-}
-
-a {
-  border-radius: 25px;
-  padding: 10px 25px;
-}
-
-a.red-btn{
-   background: rgb(0,29,36);
-  background: linear-gradient(90deg, rgba(0,29,36,1) 0%, rgba(100,133,145,1) 0%, rgba(227,18,47,1) 100%);
-}
-
-
-a.order-btn-white{
-    background-color: white;
+  .red-span {
     color: $red-span;
-}
+  }
 
+  .size-price {
+    font-size: 6rem;
+    font-weight: bold;
+  }
+
+  ul {
+    line-height: 35px;
+  }
+
+  .radius-25 {
+    border-radius: 25px;
+  }
+
+  a {
+    border-radius: 25px;
+    padding: 10px 25px;
+    &.red-btn {
+      background: rgb(0, 29, 36);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 29, 36, 1) 0%,
+        rgba(100, 133, 145, 1) 0%,
+        rgba(227, 18, 47, 1) 100%
+      );
+    }
+    &.order-btn-white {
+      background-color: white;
+      color: $red-span;
+    }
+  }
+}
 </style>
