@@ -16,7 +16,7 @@
           <!-- card blog -->
           <div class="card-blog bg-img d-flex align-items-end p-3 text-white">
             <div class="text-card w-text">
-              <span>April 21, 2019  &#8226;   by Paul</span>
+              <span>April 21, 2019 &#8226; by Paul</span>
               <h5>Amazon gets CCI nod to aquire 49% stake in</h5>
               <p>
                 When, while the lovely valley teems with vapour around meand the
@@ -32,7 +32,7 @@
           <!-- card-blog -->
           <div class="card-blog bg-blue text-white p-5">
             <div class="text-card mb-4">
-              <span>April 21, 2019  &#8226;  by Paul</span>
+              <span>April 21, 2019 &#8226; by Paul</span>
               <h5 class="my-4">Amazon gets CCI nod to aquire 49% stake in</h5>
               <p class="my-4">
                 When, while the lovely valley teems with vapour around me, the
@@ -48,7 +48,7 @@
           <!-- card-blog -->
           <div class="card-blog bg-blue text-white p-5">
             <div class="text-card mb-4">
-              <span>April 21, 2019  &#8226;  by Paul</span>
+              <span>April 21, 2019 &#8226; by Paul</span>
               <h5 class="my-4">Amazon gets CCI nod to aquire 49% stake in</h5>
               <p class="my-4">
                 When, while the lovely valley teems with vapour around me, the
@@ -76,39 +76,44 @@ export default {
 
 #blog {
   height: 650px;
-}
 
-.red-span {
-  color: $red-span;
-}
+  .red-span {
+    color: $red-span;
+  }
 
-.card-blog {
-  border-radius: 25px;
-  height: 380px;
-}
+  .card-blog {
+    border-radius: 25px;
+    height: 380px;
 
-.bg-img {
-  background-image: url("../assets/images/headway-537308-unsplash-1380x703.jpg");
-  background-position: center;
-  background-size: cover;
-}
+    &.bg-img {
+      background-image: url("../assets/images/headway-537308-unsplash-1380x703.jpg");
+      background-position: center;
+      background-size: cover;
+    }
 
-.bg-blue {
-background: rgb(1,3,11);
-background: linear-gradient(159deg, rgba(1,3,11,1) 0%, rgba(0,3,25,1) 0%, rgba(18,134,227,1) 150%);}
+    &.bg-blue {
+      background: rgb(1, 3, 11);
+      background: linear-gradient(
+        159deg,
+        rgba(1, 3, 11, 1) 0%,
+        rgba(0, 3, 25, 1) 0%,
+        rgba(18, 134, 227, 1) 150%
+      );
+    }
 
-.w-text {
-  width: 70%;
-}
+    .w-text {
+      width: 70%;
+    }
 
-.w-link {
-  width: 30%;
-}
-
-.read-btn {
-  border-radius: 25px;
-  padding: 10px 30px;
-  background-color: $bg-white;
-  color: $txt-black;
+    .w-link {
+      width: 30%;
+    }
+    .read-btn {
+      border-radius: 25px;
+      padding: 10px 30px;
+      background-color: $bg-white;
+      color: $txt-black;
+    }
+  }
 }
 </style>
