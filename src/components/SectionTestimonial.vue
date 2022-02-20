@@ -112,13 +112,9 @@
       <div class="row">
           <div class="col-12 my-5  d-flex align-items-center justify-content-between">
             <img src="../assets/images/client-1-1.png" alt="golden logo" />
-
             <img src="../assets/images/clienty-2.png" alt="sweety logo" />
-
             <img src="../assets/images/clienty-4.png" alt="fastlane logo" />
-
             <img src="../assets/images/client-5.png" alt="mighty logo" />
-
             <img src="../assets/images/clienty-3.png" alt="jr logo" />
           </div>
         </div>
