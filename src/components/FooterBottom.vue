@@ -28,13 +28,11 @@ export default {
 #footer-bottom {
   height: 80px;
   background-color: $bg-blue;
-}
-
-p {
-  color: $paragraph-color;
-}
-
-i {
-  margin-left: 20px;
+  p {
+    color: $paragraph-color;
+  }
+  i {
+    margin-left: 20px;
+  }
 }
 </style>
