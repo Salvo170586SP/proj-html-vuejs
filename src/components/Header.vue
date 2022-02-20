@@ -28,7 +28,7 @@
             <div class="col-12 subtitle-section">Digital Tecnology</div>
             <div class="col-12 title-section">Modern Solution!</div>
             <div class="col-12">
-              <p class="mb-5">
+              <p class="my-5">
                 When, while the lovely valley teems with vapour around meand the
                 meridian sun strikes the upper surface.
               </p>
@@ -64,11 +64,17 @@ a {
   padding: 10px 15px;
 } 
 
-.sing-in-btn,
-.try-btn,
-.explore-btn {
-  background-color: $btn-blue;
+a.sing-in-btn,
+a.explore-btn {
+ background: rgb(2,0,36);
+background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(36,36,115,1) 0%, rgba(0,160,186,1) 100%);
 }
+
+a.try-btn{
+  background: rgb(0,29,36);
+background: linear-gradient(90deg, rgba(0,29,36,1) 0%, rgba(100,133,145,1) 0%, rgba(227,18,47,1) 100%);
+}
+
 
 /* text */
 h1 {
