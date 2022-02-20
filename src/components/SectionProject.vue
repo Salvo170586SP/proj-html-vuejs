@@ -4,8 +4,11 @@
       <!-- image section -->
       <div class="row">
         <div class="col-6">
+          <figure class="z-index">
+            <img class="front-img" src="../assets/images/men-data.png" alt="men data" />
+          </figure>
           <figure>
-            <img src="../assets/images/men-data.png" alt="men data" />
+            <img class="back-img" src="../assets/images/nemoodar.png" alt="nemooadar" />
           </figure>
         </div>
         <div class="col-6">
@@ -48,9 +51,22 @@ export default {
 
   figure {
     width: 400px;
+    position: relative;
+
+    &.z-index{
+      z-index: 1;
+    }
+
     img {
       width: 100%;
     }
+
+    .back-img{
+      position: absolute;
+      bottom: 110px;
+      right: 30px;
+    }
+
   }
 
   .title-section {
