@@ -23,8 +23,8 @@
                   </p>                 
                 </div>
                 <div class="col-12">
-                  <a href="#">Try It Now</a>
-                  <a href="#">Explore More</a>
+                  <a href="#" class="red-btn">Try It Now</a>
+                  <a href="#" class="blue-btn">Explore More</a>
                 </div>
               </div>
             </div>
@@ -72,6 +72,17 @@ a {
   background-color: $btn-blue;
   margin-right: 10px ;
 }
+
+a.blue-btn{
+  background: rgb(2,0,36);
+  background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(36,36,115,1) 0%, rgba(0,160,186,1) 100%);
+}
+
+a.red-btn{
+   background: rgb(0,29,36);
+  background: linear-gradient(90deg, rgba(0,29,36,1) 0%, rgba(100,133,145,1) 0%, rgba(227,18,47,1) 100%);
+}
+
 
 p{
   color:  $paragraph-color;
