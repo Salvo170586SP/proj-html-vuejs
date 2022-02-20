@@ -11,7 +11,7 @@
       <SectionSubscribe />
     </main>
     <footer>
-      <FooterTop :links="quickLinks" />
+      <FooterTop :links="quickLinks" :resources="resourcesLinks" />
       <FooterBottom />
     </footer>
   </div>
@@ -58,6 +58,14 @@ export default {
         {url:'#', text: 'Services', active: false},
         {url:'#', text: 'Contact', active: false},
         {url:'#', text: 'Blog', active: false},
+      ],
+
+      resourcesLinks:[
+        {url:'#', text: 'Art Design', active: false},
+        {url:'#', text: 'Computer', active: false},
+        {url:'#', text: 'IT News', active: false},
+        {url:'#', text: 'Networking', active: false},
+        {url:'#', text: 'Web Security', active: false},
       ]
     };
   },

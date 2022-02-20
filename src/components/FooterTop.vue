@@ -17,12 +17,8 @@
             </div>
             <div class="col-3 px-5">
               <h5>Resources</h5>
-              <ul class="p-0">
-                <li><a href="#">Art Design</a></li>
-                <li><a href="#">Computer</a></li>
-                <li><a href="#">IT News</a></li>
-                <li><a href="#">Networking</a></li>
-                <li><a href="#">Web Security</a></li>
+              <ul class="p-0" v-for="(resource, id) in resources" :key="id">
+                <li><a href="#">{{resource.text}}</a></li>
               </ul>
             </div>
             <div class="col-3">
@@ -41,7 +37,7 @@
 <script>
 export default {
     name: 'FooterTop',
-    props:['links']
+    props:['links', 'resources']
 }
 </script>
 
