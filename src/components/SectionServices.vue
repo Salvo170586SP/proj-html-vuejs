@@ -96,36 +96,35 @@ export default {
 
 #services {
   height: 850px;
-}
 
-/* utility */
-a {
-  border-radius: 25px;
-  padding: 10px 15px;
-  background: rgb(0, 29, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 29, 36, 1) 0%,
-    rgba(100, 133, 145, 1) 0%,
-    rgba(227, 18, 47, 1) 100%
-  );
-}
+  /* utility */
+  span {
+    color: $red-span;
+  }
 
-span {
-  color: $red-span;
-}
+  a {
+    border-radius: 25px;
+    padding: 10px 15px;
+    background: rgb(0, 29, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 29, 36, 1) 0%,
+      rgba(100, 133, 145, 1) 0%,
+      rgba(227, 18, 47, 1) 100%
+    );
+  }
 
-figure {
-  width: 150px;
-}
+  figure {
+    width: 150px;
 
-img {
-  width: 100%;
-}
+    img {
+      width: 100%;
+    }
+  }
 
-/* CARD-SERVICES */
-
-.card-services {
-  margin-bottom: 200px;
+  /* CARD-SERVICES */
+  .card-services {
+    margin-bottom: 200px;
+  }
 }
 </style>
