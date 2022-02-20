@@ -7,8 +7,8 @@
           <img src="../assets/images/white-logo-2.png" alt="logo" />
         </div>
         <div class="col-8">
-          <nav class="d-flex justify-content-end">
-            <ul v-for="(item, index) in items" :key="index" class="p-0">
+          <nav class="d-flex justify-content-end" >
+            <ul v-for="(item, index) in items" :key="index" class="p-0 ">
               <li>
                 <a href="#">{{ item.text }}</a>
               </li>
@@ -81,10 +81,6 @@ span {
 
 p {
   color: $paragraph-color;
-}
-
-img{
-  width: 100%;
 }
 
 /* HEADER */
