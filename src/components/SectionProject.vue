@@ -47,7 +47,7 @@ export default {
 
 #your-project {
   background-color: $bg-blue;
-  height: 700px;
+  height: 100vh;
 
   figure {
     width: 400px;

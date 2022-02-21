@@ -82,19 +82,14 @@ export default {
 <style lang="scss">
 @import "./assets/scss/style.scss";
 
-/* da eliminare */
-[class^="col"] {
-  border: 1px solid red;
-}
-.container {
-  border: 1px dotted blue;
-}
-/* da eliminare  */
-
 /* HEADER */
 header {
   background-color: $bg-blue;
-  height: 900px;
+  height: 100vh;
+}
+
+footer{
+    background-color: $bg-blue;
 }
 
 </style>

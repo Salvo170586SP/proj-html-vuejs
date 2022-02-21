@@ -95,7 +95,7 @@ export default {
 @import "../assets/scss/style.scss";
 
 #services {
-  height: 850px;
+  height: 100vh;
 
   /* utility */
   span {

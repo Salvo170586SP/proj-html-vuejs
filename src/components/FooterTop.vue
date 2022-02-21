@@ -55,9 +55,8 @@ export default {
 @import "../assets/scss/style.scss";
 
 #footer-top {
-  height: 400px;
-  background-color: $bg-blue;
-
+  height: 330px;
+  
   .m-left{
     margin-left: 100px;
   }

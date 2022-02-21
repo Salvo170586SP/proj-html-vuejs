@@ -27,7 +27,8 @@ export default {
 
 #footer-bottom {
   height: 80px;
-  background-color: $bg-blue;
+  display: flex;
+  align-items: center;
   p {
     color: $paragraph-color;
   }

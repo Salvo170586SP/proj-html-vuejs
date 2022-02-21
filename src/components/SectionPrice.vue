@@ -121,7 +121,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/style.scss";
 #price-list {
-  height: 850px;
+  height: 100vh;
   background-image: linear-gradient(to bottom, $bg-blue 60%, white 50%);
 
   .card-price {

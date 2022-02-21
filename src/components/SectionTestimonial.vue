@@ -131,6 +131,12 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/style.scss";
 
+#testimonial{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 .red-span {
   color: $red-span;
 }

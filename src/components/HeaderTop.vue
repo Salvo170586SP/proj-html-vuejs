@@ -9,7 +9,7 @@
           <nav>
             <ul class="d-flex justify-content-end p-0">
               <li v-for="(item, index) in items" :key="index">
-                <a href="#">{{ item.text }}</a>
+                <a  href="#">{{ item.text }}</a>
               </li>
             </ul>
           </nav>
@@ -35,6 +35,10 @@ export default {
 a {
   border-radius: 25px;
   padding: 10px 15px;
+
+  &.active{
+    color: red-span;
+  }
 }
 
 a.bg-blue {
@@ -53,5 +57,7 @@ a.bg-blue {
     );
     color: white;
   }
+
+ 
 }
 </style>

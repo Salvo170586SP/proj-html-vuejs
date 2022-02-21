@@ -87,6 +87,13 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/style.scss";
+
+#portfolio{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 span {
   color: $red-span;
 }

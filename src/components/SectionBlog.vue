@@ -75,7 +75,9 @@ export default {
 @import "../assets/scss/style.scss";
 
 #blog {
-  height: 650px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 
   .red-span {
     color: $red-span;
