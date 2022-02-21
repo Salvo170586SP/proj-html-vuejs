@@ -36,7 +36,7 @@
                 </ul>
               </div>
               <div class="col-12 my-5">
-                <a class="red-btn fw-bold" href="#"
+                <a class="bg-red fw-bold" href="#"
                   >Order Now <i class="fa-solid fa-right-long ms-4"></i
                 ></a>
               </div>
@@ -68,7 +68,7 @@
                 </ul>
               </div>
               <div class="col-12 my-5">
-                <a class="order-btn-white fw-bold" href="#"
+                <a class="bg-white fw-bold" href="#"
                   >Order Now <i class="fa-solid fa-right-long ms-4"></i
                 ></a>
               </div>
@@ -100,7 +100,7 @@
                 </ul>
               </div>
               <div class="col-12 my-5">
-                <a class="red-btn fw-bold" href="#"
+                <a class="bg-red fw-bold" href="#"
                   >Order Now <i class="fa-solid fa-right-long ms-4"></i
                 ></a>
               </div>
@@ -137,7 +137,7 @@ export default {
       right: -7px;
     }
 
-    .z-index{
+    .z-index {
       z-index: 1;
     }
   }
@@ -172,8 +172,7 @@ export default {
   a {
     border-radius: 25px;
     padding: 10px 25px;
-    &.red-btn {
-      background: rgb(0, 29, 36);
+    &.bg-red {
       background: linear-gradient(
         90deg,
         rgba(0, 29, 36, 1) 0%,
@@ -181,9 +180,28 @@ export default {
         rgba(227, 18, 47, 1) 100%
       );
     }
-    &.order-btn-white {
+    &.bg-red:hover {
+      background: linear-gradient(
+        270deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(36, 36, 115, 1) 0%,
+        rgba(0, 160, 186, 1) 100%
+      );
+      color: white;
+    }
+
+    &.bg-white {
       background-color: white;
       color: $red-span;
+    }
+    &.bg-white:hover {
+      background: linear-gradient(
+        270deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(36, 36, 115, 1) 0%,
+        rgba(0, 160, 186, 1) 100%
+      );
+      color: white;
     }
   }
 }
