@@ -1,5 +1,12 @@
 <template>
   <section id="subscribe" class="d-flex align-items-center">
+    <!-- alert -->
+    <div class="layover" v-if="alertActive">
+      <div class="alert">
+        <h2>La tua email è stata inviata con successo</h2>
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -13,8 +20,18 @@
               </p>
             </div>
             <div class="input-subscribe">
-              <input type="email" v-model.trim="term" @keyup.enter="uploadMail" placeholder="Enter Your Mail Address" required />
-              <button type="submit" class="bg-blue" @click="uploadMail">Subscribe</button>
+              <form>
+                <input
+                  type="email"
+                  v-model.trim="term"
+                  @keyup.enter="uploadMail"
+                  placeholder="Enter Your Mail Address"
+                  required
+                />
+                <button type="submit" class="bg-blue" @click="uploadMail">
+                  Subscribe
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -26,25 +43,47 @@
 <script>
 export default {
   name: "SectionSubscribe",
-  data(){
-    return{
-      term: '',
-    }
-   
-  }, 
-  methods:{
-     uploadMail(){
-       //CONTROLLO//
-       if(!this.term) return;
+  data() {
+    return {
+      term: "",
+      alertActive: false,
+    };
+  },
+  methods: {
+    uploadMail() {
+      //CONTROLLO//
+      if (!this.term) return;
+      this.alertActive = true;
 
-       alert('La tua mail è stata ricevuta. Verrai contattato al più presto');
-       }
-  }
+      setTimeout(() => {
+        this.alertActive = false;
+      }, 3000);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../assets/scss/style.scss";
+
+.layover {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.411);
+
+  .alert {
+    width: 350px;
+    height: 150px;
+    background-color: white;
+  }
+}
 
 #subscribe {
   height: 400px;
