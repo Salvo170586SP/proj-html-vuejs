@@ -10,7 +10,7 @@
       </div>
 
       <!-- card services -->
-      <div class="row text-center align-items-end card-services">
+      <div class="row text-center align-items-end cards-services">
         <div class="col-3">
           <div class="row">
             <div class="col-12 d-flex justify-content-center">
@@ -78,7 +78,7 @@
       </div>
       <div class="row">
         <div class="col-12 text-center">
-          <a href="#">View All Services</a>
+          <a class="bg-red" href="#">View All Services</a>
         </div>
       </div>
     </div>
@@ -102,16 +102,9 @@ export default {
     color: $red-span;
   }
 
-  a {
-    border-radius: 25px;
-    padding: 10px 15px;
-    background: rgb(0, 29, 36);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 29, 36, 1) 0%,
-      rgba(100, 133, 145, 1) 0%,
-      rgba(227, 18, 47, 1) 100%
-    );
+  /* CARD-SERVICES */
+  .cards-services {
+    margin-bottom: 200px;
   }
 
   figure {
@@ -122,9 +115,27 @@ export default {
     }
   }
 
-  /* CARD-SERVICES */
-  .card-services {
-    margin-bottom: 200px;
+  a {
+    border-radius: 25px;
+    padding: 10px 15px;
+
+    &.bg-red {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 29, 36, 1) 0%,
+        rgba(100, 133, 145, 1) 0%,
+        rgba(227, 18, 47, 1) 100%
+      );
+    }
+    &.bg-red:hover {
+      background: linear-gradient(
+        270deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(36, 36, 115, 1) 0%,
+        rgba(0, 160, 186, 1) 100%
+      );
+      color: white;
+    }
   }
 }
 </style>
