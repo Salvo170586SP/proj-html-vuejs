@@ -9,7 +9,7 @@
           <nav>
             <ul class="d-flex justify-content-end p-0">
               <li v-for="(item, index) in items" :key="index">
-                <a  href="#">{{ item.text }}</a>
+                <a :class="{active: item.active}"  href="#">{{ item.text }}</a>
               </li>
             </ul>
           </nav>
@@ -37,7 +37,7 @@ a {
   padding: 10px 15px;
 
   &.active{
-    color: red-span;
+    color: $red-span;
   }
 }
 
