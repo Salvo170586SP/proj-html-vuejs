@@ -86,7 +86,8 @@ export default {
     width: 680px;
     height: 80px;
     border-radius: 20px;
-    border: 3px solid white;
+    box-shadow: 0 0 15px 0 black;
+    border: 2px solid white;
     background: linear-gradient(
       270deg,
       rgba(2, 0, 36, 1) 0%,
