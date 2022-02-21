@@ -94,6 +94,7 @@ export default {
 /* HEADER */
 header {
   background-color: $bg-blue;
+  height: 900px;
 }
 
 </style>

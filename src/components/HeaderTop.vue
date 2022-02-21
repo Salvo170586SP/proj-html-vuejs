@@ -1,14 +1,14 @@
 <template>
-  <div class="header-top">
+  <div id="header-top" class="py-3">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-3">
           <img src="../assets/images/white-logo-2.png" alt="logo" />
         </div>
         <div class="col-8">
-          <nav class="d-flex justify-content-end">
-            <ul v-for="(item, index) in items" :key="index" class="p-0">
-              <li>
+          <nav >
+            <ul class="d-flex justify-content-end p-0">
+              <li v-for="(item, index) in items" :key="index">
                 <a href="#">{{ item.text }}</a>
               </li>
             </ul>
