@@ -11,16 +11,16 @@
         </div>
         <div class="col-3 px-5">
           <h5>Quick links</h5>
-          <ul class="p-0" v-for="(link, id) in links" :key="id">
-            <li>
+          <ul class="p-0">
+            <li v-for="(link, id) in links" :key="id">
               <a href="#">{{ link.text }}</a>
             </li>
           </ul>
         </div>
-        <div class="col-3 px-5">
-          <h5>Resources</h5>
-          <ul class="p-0" v-for="(resource, id) in resources" :key="id">
-            <li>
+        <div class="col-3 px-5 text-center">
+          <h5 class="mb-4" >Resources</h5>
+          <ul class="p-0 m-left" >
+            <li v-for="(resource, id) in resources" :key="id">
               <a href="#">{{ resource.text }}</a>
             </li>
           </ul>
@@ -58,8 +58,12 @@ export default {
   height: 400px;
   background-color: $bg-blue;
 
+  .m-left{
+    margin-left: 100px;
+  }
+
   li {
-    line-height: 30px;
+    line-height: 35px;
   }
   
   a,
