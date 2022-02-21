@@ -135,6 +135,7 @@ export default {
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: $bg-lightwhite;
 }
 
 .red-span {

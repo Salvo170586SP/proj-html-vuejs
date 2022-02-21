@@ -106,7 +106,7 @@ export default {
 
 #subscribe {
   height: 400px;
-  background-image: linear-gradient(to bottom, $bg-white 50%, $bg-blue 50%);
+  background-image: linear-gradient(to bottom, $bg-lightwhite 50%, $bg-blue 50%);
 
   .card-subscribe {
     height: 260px;

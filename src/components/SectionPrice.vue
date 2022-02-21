@@ -122,7 +122,7 @@ export default {
 @import "../assets/scss/style.scss";
 #price-list {
   height: 100vh;
-  background-image: linear-gradient(to bottom, $bg-blue 60%, white 50%);
+  background-image: linear-gradient(to bottom, $bg-blue 60%, $bg-lightwhite 50%);
 
   .card-price {
     position: relative;
