@@ -55,9 +55,15 @@ export default {
   methods: {
     uploadMail() {
       //CONTROLLO//
-      if (!this.term) return;
-      this.alertActive = true;
+      const lowerTerm = this.term.toLowerCase();
+      if (!lowerTerm) return;
 
+      //CONTROLLO//
+      if (!lowerTerm.includes("@")) {
+        return alert("inserisci email valida");
+      }
+
+      this.alertActive = true;
       setTimeout(() => {
         this.alertActive = false;
       }, 4000);
