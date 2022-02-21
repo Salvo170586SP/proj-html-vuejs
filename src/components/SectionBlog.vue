@@ -24,7 +24,7 @@
               </p>
             </div>
             <div class="link-card w-link mb-5">
-              <a class="read-btn" href="#">Read More</a>
+              <a class="bg-white" href="#">Read More</a>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
               </p>
             </div>
             <div class="link-card my-5">
-              <a class="read-btn" href="#">Read More</a>
+              <a class="bg-white" href="#">Read More</a>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
               </p>
             </div>
             <div class="link-card my-5">
-              <a class="read-btn" href="#">Read More</a>
+              <a class="bg-white" href="#">Read More</a>
             </div>
           </div>
         </div>
@@ -93,7 +93,6 @@ export default {
     }
 
     &.bg-blue {
-      background: rgb(1, 3, 11);
       background: linear-gradient(
         159deg,
         rgba(1, 3, 11, 1) 0%,
@@ -109,11 +108,23 @@ export default {
     .w-link {
       width: 30%;
     }
-    .read-btn {
+
+    a {
       border-radius: 25px;
       padding: 10px 30px;
-      background-color: $bg-white;
-      color: $txt-black;
+      &.bg-white {
+        background-color: $bg-white;
+        color: $txt-black;
+      }
+      &.bg-white:hover {
+        background: linear-gradient(
+          90deg,
+          rgba(0, 29, 36, 1) 0%,
+          rgba(100, 133, 145, 1) 0%,
+          rgba(227, 18, 47, 1) 100%
+        );
+        color: white;
+      }
     }
   }
 }
