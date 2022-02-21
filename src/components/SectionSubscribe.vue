@@ -3,7 +3,10 @@
     <!-- alert -->
     <div class="layover" v-if="alertActive">
       <div class="alert">
-        <h2>La tua email è stata inviata con successo</h2>
+        <h2>
+          La tua email è stata inviata con successo
+          <i class="fa-solid fa-check"></i>
+        </h2>
       </div>
     </div>
 
@@ -79,9 +82,17 @@ export default {
   background-color: rgba(0, 0, 0, 0.411);
 
   .alert {
-    width: 350px;
-    height: 150px;
-    background-color: white;
+    width: 690px;
+    height: 80px;
+    border-radius: 20px;
+    border: 3px solid white;
+    background: linear-gradient(
+      270deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(36, 36, 115, 1) 0%,
+      rgba(0, 160, 186, 1) 100%
+    );
+    color: $bg-white;
   }
 }
 
