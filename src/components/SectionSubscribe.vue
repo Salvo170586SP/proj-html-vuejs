@@ -69,10 +69,9 @@ export default {
       }
       button {
         border-radius: 25px;
-        padding: 8px;
-        border: none;       
+        padding: 10px;
+        border: none;
         &.bg-blue {
-          background: rgb(2, 0, 36);
           background: linear-gradient(
             270deg,
             rgba(2, 0, 36, 1) 0%,
@@ -80,6 +79,15 @@ export default {
             rgba(0, 160, 186, 1) 100%
           );
           color: $bg-white;
+        }
+        &.bg-blue:active {
+          background: linear-gradient(
+            90deg,
+            rgba(0, 29, 36, 1) 0%,
+            rgba(100, 133, 145, 1) 0%,
+            rgba(227, 18, 47, 1) 100%
+          );
+          color: white;
         }
       }
     }
