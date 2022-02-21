@@ -38,8 +38,12 @@ a {
 } 
 
 a.bg-blue {
- background: rgb(2,0,36);
 background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(36,36,115,1) 0%, rgba(0,160,186,1) 100%);
 }
+
+/* hover link/button */
+a.bg-blue:hover {
+background: linear-gradient(90deg, rgba(0,29,36,1) 0%, rgba(100,133,145,1) 0%, rgba(227,18,47,1) 100%);
+color: white;}
 
 </style>
