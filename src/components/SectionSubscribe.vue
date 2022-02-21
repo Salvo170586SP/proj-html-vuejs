@@ -23,7 +23,7 @@
               </p>
             </div>
             <div class="input-subscribe">
-              <form>
+             
                 <input
                   type="email"
                   v-model.trim="term"
@@ -31,10 +31,10 @@
                   placeholder="Enter Your Mail Address"
                   required
                 />
-                <button type="submit" class="bg-blue" @click="uploadMail">
+                <button type="button" class="bg-blue" @click="uploadMail">
                   Subscribe
                 </button>
-              </form>
+              
             </div>
           </div>
         </div>
@@ -55,18 +55,18 @@ export default {
   methods: {
     uploadMail() {
       //CONTROLLO//
-      const lowerTerm = this.term.toLowerCase();
-      if (!lowerTerm) return;
+      const lowerTerm = this.term;
+      if(!lowerTerm) return;
 
       //CONTROLLO//
-      if (!lowerTerm.includes("@")) {
+        if (!lowerTerm.includes("@")) {
         return alert("inserisci email valida");
       }
 
       this.alertActive = true;
       setTimeout(() => {
         this.alertActive = false;
-      }, 4000);
+      }, 3000);
     },
   },
 };
@@ -106,7 +106,11 @@ export default {
 
 #subscribe {
   height: 400px;
-  background-image: linear-gradient(to bottom, $bg-lightwhite 50%, $bg-blue 50%);
+  background-image: linear-gradient(
+    to bottom,
+    $bg-lightwhite 50%,
+    $bg-blue 50%
+  );
 
   .card-subscribe {
     height: 260px;
