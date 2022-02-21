@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header>
+    <header id="header">
       <HeaderTop :items="headerItems" />
       <HeaderBottom />
     </header>
@@ -16,6 +16,7 @@
     <footer>
       <FooterTop :links="quickLinks" :resources="resourcesLinks" />
       <FooterBottom />
+      <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>     
     </footer>
   </div>
 </template>
@@ -46,7 +47,7 @@ export default {
     SectionTestimonial,
     SectionSubscribe,
     FooterTop,
-    FooterBottom
+    FooterBottom,
   },
   data() {
     return {
@@ -90,6 +91,18 @@ header {
 
 footer{
     background-color: $bg-blue;
+}
+
+.fa-arrow-up{
+  background-color: white;
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px solid $bg-blue;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: $bg-blue;
+  cursor: pointer;
 }
 
 </style>

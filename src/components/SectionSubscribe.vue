@@ -60,7 +60,7 @@ export default {
 
       setTimeout(() => {
         this.alertActive = false;
-      }, 3000);
+      }, 4000);
     },
   },
 };
@@ -69,6 +69,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/style.scss";
 
+/* alert */
 .layover {
   width: 100%;
   position: fixed;
@@ -82,7 +83,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.411);
 
   .alert {
-    width: 690px;
+    width: 680px;
     height: 80px;
     border-radius: 20px;
     border: 3px solid white;
