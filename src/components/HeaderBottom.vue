@@ -14,8 +14,8 @@
               </p>
             </div>
             <div class="col-12">
-              <a href="#" class="try-btn px-4">Try It Now</a>
-              <a href="#" class="explore-btn px-4 ms-4">Explore More</a>
+              <a href="#" class="bg-red px-4">Try It Now</a>
+              <a href="#" class="bg-blue px-4 ms-4">Explore More</a>
             </div>
           </div>
         </div>
@@ -67,12 +67,15 @@ a {
   padding: 10px 15px;
 } 
 
-a.try-btn{
+a.bg-red{
   background: rgb(0,29,36);
 background: linear-gradient(90deg, rgba(0,29,36,1) 0%, rgba(100,133,145,1) 0%, rgba(227,18,47,1) 100%);
 }
-a.explore-btn {
+a.bg-blue {
  background: rgb(2,0,36);
 background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(36,36,115,1) 0%, rgba(0,160,186,1) 100%);
 }
+
+
+
 </style>

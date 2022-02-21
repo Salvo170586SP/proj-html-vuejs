@@ -15,7 +15,7 @@
           </nav>
         </div>
         <div class="col-1">
-          <a class="sing-in-btn" href="#">Sing-in</a>
+          <a class="bg-blue" href="#">Sing-in</a>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@ a {
   padding: 10px 15px;
 } 
 
-a.sing-in-btn {
+a.bg-blue {
  background: rgb(2,0,36);
 background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(36,36,115,1) 0%, rgba(0,160,186,1) 100%);
 }

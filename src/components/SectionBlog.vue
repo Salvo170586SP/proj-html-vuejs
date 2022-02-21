@@ -86,7 +86,8 @@ export default {
     height: 380px;
 
     &.bg-img {
-      background-image: url("../assets/images/headway-537308-unsplash-1380x703.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../assets/images/headway-537308-unsplash-1380x703.jpg");
       background-position: center;
       background-size: cover;
     }
