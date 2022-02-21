@@ -57,7 +57,5 @@ a.bg-blue {
     );
     color: white;
   }
-
- 
 }
 </style>

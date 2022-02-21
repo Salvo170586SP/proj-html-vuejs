@@ -13,8 +13,8 @@
               </p>
             </div>
             <div class="input-subscribe">
-              <input type="text" placeholder="Enter Your Mail Address" />
-              <button class="bg-blue">Subscribe</button>
+              <input type="email" v-model.trim="term" @keyup.enter="uploadMail" placeholder="Enter Your Mail Address" required />
+              <button type="submit" class="bg-blue" @click="uploadMail">Subscribe</button>
             </div>
           </div>
         </div>
@@ -26,6 +26,20 @@
 <script>
 export default {
   name: "SectionSubscribe",
+  data(){
+    return{
+      term: '',
+    }
+   
+  }, 
+  methods:{
+     uploadMail(){
+       //CONTROLLO//
+       if(!this.term) return;
+
+       alert('La tua mail è stata ricevuta. Verrai contattato al più presto');
+       }
+  }
 };
 </script>
 
