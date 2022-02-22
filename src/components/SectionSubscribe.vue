@@ -67,6 +67,7 @@ export default {
       this.alertActive = true;
       setTimeout(() => {
         this.alertActive = false;
+        this.term = '';
       }, 3000);
     }, 
   },
