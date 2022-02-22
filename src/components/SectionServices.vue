@@ -11,11 +11,9 @@
       </div>
 
       <!-- card services -->
-      <div class="row text-center align-items-end cards-services">       
-        <div class="col d-flex">
+      <div class="row text-center align-items-end cards-services">  
+        <!-- card component -->     
           <ServiceCards v-for="(card, index) in servicesCards" :key="index" :card="card" />
-        </div>
-
       </div>
       <div class="row">
         <div class="col-12 text-center">
@@ -61,13 +59,6 @@ export default {
     margin-bottom: 200px;
   }
 
-  figure {
-    width: 150px;
-
-    img {
-      width: 100%;
-    }
-  }
 
   a {
     border-radius: 25px;
