@@ -30,46 +30,27 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <!-- card-blog -->
-          <div class="card-blog bg-blue text-white p-5">
-            <div class="text-card mb-4">
-              <span>April 21, 2019 &#8226; by Paul</span>
-              <h5 class="my-4">Amazon gets CCI nod to aquire 49% stake in</h5>
-              <p class="my-4">
-                When, while the lovely valley teems with vapour around me, the
-                meridian sun s...
-              </p>
-            </div>
-            <div class="link-card my-5">
-              <a class="bg-white" href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <!-- card-blog -->
-          <div class="card-blog bg-blue text-white p-5">
-            <div class="text-card mb-4">
-              <span>April 21, 2019 &#8226; by Paul</span>
-              <h5 class="my-4">Amazon gets CCI nod to aquire 49% stake in</h5>
-              <p class="my-4">
-                When, while the lovely valley teems with vapour around me, the
-                meridian sun s...
-              </p>
-            </div>
-            <div class="link-card my-5">
-              <a class="bg-white" href="#">Read More</a>
-            </div>
-          </div>
-        </div>
+        <!--  card blue -->
+        <BlueCard v-for="(card, index) in blueCards" :key="index" :card="card" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import BlueCard from "../components/BlueCard.vue";
+
 export default {
   name: "SectionBlog",
+  components:{ BlueCard },
+  data(){
+    return{
+      blueCards:[
+        {date:"April 21, . by Paul", title:"Amazon gets CCI nod to aquire 49% stake in", text:"When, while the lovely valley teems with vapour around me, the meridian sun s..."},
+        {date:"April 21, 2019 . by Paul", title:"Amazon gets CCI nod to aquire 49% stake in", text:"When, while the lovely valley teems with vapour around me, the meridian sun s..."},
+        ],
+    }
+  }
 };
 </script>
 
