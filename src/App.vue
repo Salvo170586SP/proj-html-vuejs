@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header id="header">
+    <header id="up">
       <HeaderTop :items="headerItems" />
       <HeaderBottom />
     </header>
@@ -16,7 +16,8 @@
     <footer>
       <FooterTop :links="quickLinks" :resources="resourcesLinks" />
       <FooterBottom />
-      <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>     
+      <a href="#up"><i class="fa-solid fa-arrow-up"></i></a>
+      <div class="assistant"><i class="fa-solid fa-comment"></i></div>   
     </footer>
   </div>
 </template>
@@ -99,10 +100,20 @@ footer{
   border-radius: 50%;
   border: 1px solid $bg-blue;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 55px;
+  right: 100px;
   color: $bg-blue;
   cursor: pointer;
+}
+
+.assistant{
+  background-color: $btn-blue;
+  padding: 25px;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: $bg-white;
 }
 
 </style>
