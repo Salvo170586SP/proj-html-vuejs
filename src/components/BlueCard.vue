@@ -9,7 +9,7 @@
                 {{card.text}}
               </p>
             </div>
-            <div class="link-card my-4">
+            <div class="link-card my-5">
               <a class="bg-white" href="#">Read More</a>
             </div>
           </div>
