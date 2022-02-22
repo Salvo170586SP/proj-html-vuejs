@@ -1,6 +1,7 @@
 <template>
   <section id="blog">
     <div class="container">
+      <!-- title -->
       <div class="row text-center my-5">
         <div class="col-12">
           <span class="red-span">Blog</span>
@@ -11,6 +12,7 @@
           </p>
         </div>
       </div>
+
       <div class="row">
         <div class="col-6">
           <!-- card blog -->

@@ -1,5 +1,6 @@
 <template>
   <section id="subscribe" class="d-flex align-items-center">
+
     <!-- alert -->
     <div class="layover" v-if="alertActive">
       <div class="alert">
@@ -22,8 +23,7 @@
                 meridian sun strikes the upper surface.
               </p>
             </div>
-            <div class="input-subscribe">
-             
+            <div class="input-subscribe">           
                 <input
                   type="email"
                   v-model.trim="term"
@@ -33,8 +33,7 @@
                 />
                 <button type="button" class="bg-blue" @click="uploadMail">
                   Subscribe
-                </button>
-              
+                </button>             
             </div>
           </div>
         </div>
@@ -49,11 +48,13 @@ export default {
   data() {
     return {
       term: "",
-      alertActive: false,
+       alertActive: false,
     };
   },
   methods: {
-    uploadMail() {
+
+
+     uploadMail() {
       //CONTROLLO//
       const lowerTerm = this.term;
       if(!lowerTerm) return;
@@ -67,7 +68,7 @@ export default {
       setTimeout(() => {
         this.alertActive = false;
       }, 3000);
-    },
+    }, 
   },
 };
 </script>
@@ -76,7 +77,7 @@ export default {
 @import "../assets/scss/style.scss";
 
 /* alert */
-.layover {
+ .layover {
   width: 100%;
   position: fixed;
   top: 0;
@@ -102,7 +103,7 @@ export default {
     );
     color: $bg-white;
   }
-}
+} 
 
 #subscribe {
   height: 400px;

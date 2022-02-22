@@ -1,6 +1,7 @@
 <template>
   <section id="price-list">
     <div class="container">
+      <!-- title -->
       <div class="row text-center py-5">
         <div class="col-12"><span class="red-span">Price List</span></div>
         <div class="col-12 h2 text-white">Our Pricing</div>

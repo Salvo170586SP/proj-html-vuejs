@@ -1,6 +1,7 @@
 <template>
   <section id="services" class="d-flex align-items-center">
     <div class="container">
+      <!-- title -->
       <div class="row py-5">
         <div class="col-12 text-center"><span>Our Services</span></div>
         <div class="col-12 h2 text-center"><strong>What</strong> We Do</div>
@@ -10,71 +11,11 @@
       </div>
 
       <!-- card services -->
-      <div class="row text-center align-items-end cards-services">
-        <div class="col-3">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <figure>
-                <img src="../assets/images/Group-247.png" alt="data analysis" />
-              </figure>
-            </div>
-            <div class="col-12 h3">Data Analysis</div>
-            <div class="col-12">
-              <p>
-                When, while the lovely valley teems with vapour around meand the
-                meridian sun strikes the upper
-              </p>
-            </div>
-          </div>
+      <div class="row text-center align-items-end cards-services">       
+        <div class="col d-flex">
+          <ServiceCards v-for="(card, index) in servicesCards" :key="index" :card="card" />
         </div>
-        <div class="col-3">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <figure>
-                <img src="../assets/images/Group-567.png" alt="" />
-              </figure>
-            </div>
-            <div class="col-12 h3">Seo Optimization</div>
-            <div class="col-12">
-              <p>
-                When, while the lovely valley teems with vapour around meand the
-                meridian sun strikes the upper
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <figure>
-                <img src="../assets/images/Group-538.png" alt="" />
-              </figure>
-            </div>
-            <div class="col-12 h3">Security Data</div>
-            <div class="col-12">
-              <p>
-                When, while the lovely valley teems with vapour around meand the
-                meridian sun strikes the upper
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <figure>
-                <img src="../assets/images/Group-566.png" alt="" />
-              </figure>
-            </div>
-            <div class="col-12 h3">Branding strategy</div>
-            <div class="col-12">
-              <p>
-                When, while the lovely valley teems with vapour around meand the
-                meridian sun strikes the upper
-              </p>
-            </div>
-          </div>
-        </div>
+
       </div>
       <div class="row">
         <div class="col-12 text-center">
@@ -86,8 +27,21 @@
 </template>
 
 <script>
+import ServiceCards from "../components/ServiceCards.vue";
+
 export default {
   name: "SectionServices",
+  components:{ServiceCards},
+  data(){
+    return{
+       servicesCards:[
+        {url: require('../assets/images/Group-247.png'), title: 'Data Analysis', text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'},
+        {url: require('../assets/images/Group-567.png'), title: 'Seo Optimization', text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'},
+        {url: require('../assets/images/Group-538.png'), title: 'Security Data', text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'},
+        {url: require('../assets/images/Group-566.png'), title: 'Branding strategy', text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'},
+      ],
+    }
+  }
 };
 </script>
 
