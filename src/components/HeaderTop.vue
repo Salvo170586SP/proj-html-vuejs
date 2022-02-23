@@ -7,7 +7,7 @@
         </div>
         <div class="col-8">
           <nav>
-            <ul class="d-flex justify-content-end p-0">
+            <ul class="d-flex justify-content-end p-0 mb-0">
               <li v-for="(item, index) in items" :key="index">
                 <a :class="{active: item.active}"  href="#">{{ item.text }}</a>
               </li>

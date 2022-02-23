@@ -7,33 +7,33 @@
           <h2><strong>lastest</strong> work</h2>
         </div>
         <div class="col-6 d-flex align-items-center justify-content-end">
-          <i class="fa-solid fa-arrow-left-long"></i>
-          <i class="fa-solid fa-arrow-right-long"></i>
+          <i @click="prevPic" class="fa-solid fa-arrow-left-long"></i>
+          <i @click="nextPic" class="fa-solid fa-arrow-right-long"></i>
         </div>
       </div>
 
       <!-- cards portfolio -->
-      <div class="row">
-        <div class="col-4">
+      <div class="row justify-content-center">
+
+        <div class="col-4" v-for="(card , index) in slidersCards" :key="index"  v-show="index === currentIndex">
           
           <!-- card -->
-          <div class="card bg-red">
+          <div class="card bg-red" :class="{opacity: cardActive(index)}">
             <figure>
               <img
                 class="img-fluid"
-                src="../assets/images/8wa60okr-1-790x576.jpg"
+                :src="card.url"
                 alt=""
               />
             </figure>
             <div class="row py-2">
-              <div class="col-7 fw-bold">Bascket of flower on table</div>
-              <div class="col-5">Branding Strategy</div>
+              <div class="col-7 fw-bold">{{card.title}}</div>
+              <div class="col-5">{{card.subtitle}}</div>
             </div>
           </div>
         </div>
 
-        <div class="col-4">
-          <!-- card -->
+       <!--  <div class="col-4">
           <div class="card bg-red">
             <figure>
               <img
@@ -47,10 +47,9 @@
               <div class="col-5">Digital Experience</div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="col-4">
-          <!-- card -->
+       <!--  <div class="col-4">
           <div class="card bg-red">
             <figure>
               <img
@@ -64,15 +63,15 @@
               <div class="col-5">Branding Strategy</div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="row">
         <div class="col-12 p-5 d-flex justify-content-center">
+          <div  v-for="(card , index) in slidersCards" :key="index" class="dot-img" :class="{active: dotActive(index)}"></div>
+          <!-- <div class="dot-img"></div>
           <div class="dot-img"></div>
-          <div class="dot-img"></div>
-          <div class="dot-img"></div>
-          <div class="dot-img"></div>
+          <div class="dot-img"></div> -->
         </div>
       </div>
     </div>
@@ -82,6 +81,39 @@
 <script>
 export default {
   name: "SectionPortfolio",
+  data(){
+    return{
+      currentIndex: 0,
+      slidersCards: [
+        {url: require('../assets/images/8wa60okr-1-790x576.jpg'), title: 'Bascket of flower on table', subtitle: 'Branding Strategy'},
+        {url: require('../assets/images/DRY-1-790x576.jpg'), title: 'Purinky Products', subtitle: 'Digital Experience'},
+        {url: require('../assets/images/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg'), title: 'Satisfy Poster', subtitle: 'Branding Strategy'},
+        {url: require('../assets/images/84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg'), title: 'Satisfy Poster', subtitle: 'Branding Strategy'},
+      ]
+    }
+  },
+  methods:{
+    prevPic(){
+     if(this.currentIndex === 0 ){
+       this.currentIndex = this.slidersCards.length -1;
+     }else{
+       this.currentIndex --;
+       }
+    },
+    nextPic(){
+      if(this.currentIndex === this.slidersCards.length -1){
+        this.currentIndex = 0;
+      }else{
+      this.currentIndex ++;
+      }
+    },
+    dotActive(index){
+     return this.currentIndex === index;
+    },
+    cardActive(index){
+      return this.currentIndex !== index;
+    }
+  }
 };
 </script>
 
@@ -113,6 +145,10 @@ i {
   cursor: pointer;
   border: 0;
 
+  &.opacity{
+    opacity: 0.5;
+  }
+
   &:hover.bg-red {
     background: linear-gradient(
       90deg,
@@ -132,8 +168,15 @@ figure {
 .dot-img {
   width: 10px;
   height: 10px;
-  background-color: $red-span;
+  border: 1px solid $red-span;
   border-radius: 50%;
   margin-right: 20px;
+
+  &.active{
+    background-color: $red-span;
+  }
 }
+
+
+
 </style>

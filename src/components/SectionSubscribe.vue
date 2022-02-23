@@ -56,7 +56,7 @@ export default {
 
      uploadMail() {
       //CONTROLLO//
-      const lowerTerm = this.term;
+      const lowerTerm = this.term.toLowerCase();
       if(!lowerTerm) return;
 
       //CONTROLLO//
