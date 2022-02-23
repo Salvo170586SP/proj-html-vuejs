@@ -11,67 +11,42 @@
           <i @click="nextPic" class="fa-solid fa-arrow-right-long"></i>
         </div>
       </div>
+    </div>
 
-      <!-- cards portfolio -->
-      <div class="row justify-content-center">
+    <!-- cards portfolio -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 d-flex overflow">
 
-        <div class="col-4" v-for="(card , index) in slidersCards" :key="index"  v-show="index === currentIndex">
-          
           <!-- card -->
-          <div class="card bg-red" :class="{opacity: cardActive(index)}">
+          <div
+            class="card bg-red mx-1"
+            v-for="(card, index) in slidersCards"
+            :key="index"
+            :class="{ opacity: cardActive(index) }"
+          >
             <figure>
-              <img
-                class="img-fluid"
-                :src="card.url"
-                alt=""
-              />
+              <img class="img-fluid" :src="card.url" alt="" />
             </figure>
             <div class="row py-2">
-              <div class="col-7 fw-bold">{{card.title}}</div>
-              <div class="col-5">{{card.subtitle}}</div>
+              <div class="col-7 fw-bold">{{ card.title }}</div>
+              <div class="col-5">{{ card.subtitle }}</div>
             </div>
           </div>
         </div>
-
-       <!--  <div class="col-4">
-          <div class="card bg-red">
-            <figure>
-              <img
-                class="img-fluid"
-                src="../assets/images/DRY-1-790x576.jpg"
-                alt=""
-              />
-            </figure>
-            <div class="row py-2">
-              <div class="col-7 fw-bold">Purinky Products</div>
-              <div class="col-5">Digital Experience</div>
-            </div>
-          </div>
-        </div> -->
-
-       <!--  <div class="col-4">
-          <div class="card bg-red">
-            <figure>
-              <img
-                class="img-fluid"
-                src="../assets/images/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg"
-                alt=""
-              />
-            </figure>
-            <div class="row py-2">
-              <div class="col-7 fw-bold">Satisfy Poster</div>
-              <div class="col-5">Branding Strategy</div>
-            </div>
-          </div>
-        </div> -->
       </div>
 
       <div class="row">
         <div class="col-12 p-5 d-flex justify-content-center">
-          <div  v-for="(card , index) in slidersCards" :key="index" class="dot-img" :class="{active: dotActive(index)}"></div>
-          <!-- <div class="dot-img"></div>
-          <div class="dot-img"></div>
-          <div class="dot-img"></div> -->
+
+          <!-- dot-img -->
+          <div
+            v-for="(card, index) in slidersCards"
+            :key="index"
+            class="dot-img"
+            :class="{ active: dotActive(index) }"
+          ></div>
+          
         </div>
       </div>
     </div>
@@ -81,49 +56,66 @@
 <script>
 export default {
   name: "SectionPortfolio",
-  data(){
-    return{
+  data() {
+    return {
       currentIndex: 0,
       slidersCards: [
-        {url: require('../assets/images/8wa60okr-1-790x576.jpg'), title: 'Bascket of flower on table', subtitle: 'Branding Strategy'},
-        {url: require('../assets/images/DRY-1-790x576.jpg'), title: 'Purinky Products', subtitle: 'Digital Experience'},
-        {url: require('../assets/images/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg'), title: 'Satisfy Poster', subtitle: 'Branding Strategy'},
-        {url: require('../assets/images/84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg'), title: 'Satisfy Poster', subtitle: 'Branding Strategy'},
-      ]
-    }
+        {
+          url: require("../assets/images/8wa60okr-1-790x576.jpg"),
+          title: "Bascket of flower on table",
+          subtitle: "Branding Strategy",
+        },
+        {
+          url: require("../assets/images/DRY-1-790x576.jpg"),
+          title: "Purinky Products",
+          subtitle: "Digital Experience",
+        },
+        {
+          url: require("../assets/images/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg"),
+          title: "Satisfy Poster",
+          subtitle: "Branding Strategy",
+        },
+        {
+          url: require("../assets/images/84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg"),
+          title: "Satisfy Poster",
+          subtitle: "Branding Strategy",
+        },
+      ],
+    };
   },
-  methods:{
-    prevPic(){
-     if(this.currentIndex === 0 ){
-       this.currentIndex = this.slidersCards.length -1;
-     }else{
-       this.currentIndex --;
-       }
-    },
-    nextPic(){
-      if(this.currentIndex === this.slidersCards.length -1){
-        this.currentIndex = 0;
-      }else{
-      this.currentIndex ++;
+  methods: {
+    prevPic() {
+      if (this.currentIndex === 0) {
+        this.currentIndex = this.slidersCards.length - 1;
+      } else {
+        this.currentIndex--;
       }
     },
-    dotActive(index){
-     return this.currentIndex === index;
+    nextPic() {
+      if (this.currentIndex === this.slidersCards.length - 1) {
+        this.currentIndex = 0;
+      } else {
+        this.currentIndex++;
+      }
     },
-    cardActive(index){
+    dotActive(index) {
+      return this.currentIndex === index;
+    },
+    cardActive(index) {
       return this.currentIndex !== index;
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../assets/scss/style.scss";
 
-#portfolio{
+#portfolio {
   height: 100vh;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 span {
@@ -144,9 +136,9 @@ i {
   text-align: center;
   cursor: pointer;
   border: 0;
-
-  &.opacity{
-    opacity: 0.5;
+  min-width: 450px;
+  &.opacity {
+    opacity: 0.7;
   }
 
   &:hover.bg-red {
@@ -158,6 +150,10 @@ i {
     );
     color: white;
   }
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 figure {
@@ -172,11 +168,8 @@ figure {
   border-radius: 50%;
   margin-right: 20px;
 
-  &.active{
+  &.active {
     background-color: $red-span;
   }
 }
-
-
-
 </style>
