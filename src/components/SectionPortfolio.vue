@@ -16,7 +16,7 @@
     <!-- cards portfolio -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 d-flex overflow wrapper-box">
+        <div class="col-12 d-flex overflow wrapper-box py-5">
           <!-- card -->
           <div
             class="card bg-red"
@@ -85,6 +85,7 @@ export default {
       if (this.currentIndex === 0) {
         this.currentIndex = this.slidersCards.length - 1;
       } else {
+        this.currentIndex--;
         const content = document.querySelector(".wrapper-box");
         content.scrollLeft -= 50;
        }
@@ -93,6 +94,7 @@ export default {
       if (this.currentIndex === this.slidersCards.length - 1) {
         this.currentIndex = 0;
       } else {
+        this.currentIndex++;
         const content = document.querySelector(".wrapper-box");
         content.scrollLeft += 50;
       }
@@ -130,6 +132,7 @@ i {
   padding: 15px;
 }
 
+
 .card {
   border-radius: 20px;
   text-align: center;
@@ -137,10 +140,7 @@ i {
   border: 0;
   min-width: 550px;
   margin-right: 40px;
-
-  &.opacity {
-    opacity: 0.7;
-  }
+  z-index: 1;
 
   &:hover.bg-red {
     background: linear-gradient(
@@ -150,11 +150,13 @@ i {
       rgba(227, 18, 47, 1) 100%
     );
     color: white;
-  }
+    margin-top: -20px;
+    transition: 0.4s;
+   }
 }
 
 .overflow {
-  overflow: auto;
+  overflow: hidden;
 }
 
 figure {
