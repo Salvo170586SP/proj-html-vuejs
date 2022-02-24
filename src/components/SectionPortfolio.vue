@@ -16,11 +16,10 @@
     <!-- cards portfolio -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 d-flex overflow">
-
+        <div class="col-12 d-flex overflow wrapper-box">
           <!-- card -->
           <div
-            class="card bg-red mx-1"
+            class="card bg-red"
             v-for="(card, index) in slidersCards"
             :key="index"
             :class="{ opacity: cardActive(index) }"
@@ -38,7 +37,6 @@
 
       <div class="row">
         <div class="col-12 p-5 d-flex justify-content-center">
-
           <!-- dot-img -->
           <div
             v-for="(card, index) in slidersCards"
@@ -46,7 +44,6 @@
             class="dot-img"
             :class="{ active: dotActive(index) }"
           ></div>
-          
         </div>
       </div>
     </div>
@@ -88,14 +85,16 @@ export default {
       if (this.currentIndex === 0) {
         this.currentIndex = this.slidersCards.length - 1;
       } else {
-        this.currentIndex--;
-      }
+        const content = document.querySelector(".wrapper-box");
+        content.scrollLeft -= 50;
+       }
     },
     nextPic() {
       if (this.currentIndex === this.slidersCards.length - 1) {
         this.currentIndex = 0;
       } else {
-        this.currentIndex++;
+        const content = document.querySelector(".wrapper-box");
+        content.scrollLeft += 50;
       }
     },
     dotActive(index) {
@@ -136,13 +135,12 @@ i {
   text-align: center;
   cursor: pointer;
   border: 0;
-  min-width: 450px;
+  min-width: 550px;
+  margin-right: 40px;
 
   &.opacity {
     opacity: 0.7;
   }
-
-
 
   &:hover.bg-red {
     background: linear-gradient(
@@ -153,11 +151,10 @@ i {
     );
     color: white;
   }
-
 }
 
 .overflow {
-  overflow: hidden;
+  overflow: auto;
 }
 
 figure {
