@@ -1,13 +1,12 @@
 <template>
   <section id="subscribe" class="d-flex align-items-center">
-
     <!-- alert -->
     <div class="layover" v-if="alertActive">
-      <div class="alert">
-        <h2>
-          La tua email è stata inviata con successo
-          <i class="fa-solid fa-check"></i>
-        </h2>
+      <div class="alert shadow">
+        <div class="main-alert">
+          <i class="fa-solid fa-check fa-2x"></i>
+          <h2>La tua email è stata inviata con successo</h2>
+        </div>
       </div>
     </div>
 
@@ -23,17 +22,17 @@
                 meridian sun strikes the upper surface.
               </p>
             </div>
-            <div class="input-subscribe">           
-                <input
-                  type="email"
-                  v-model.trim="term"
-                  @keyup.enter="uploadMail"
-                  placeholder="Enter Your Mail Address"
-                  required
-                />
-                <button type="button" class="bg-blue" @click="uploadMail">
-                  Subscribe
-                </button>             
+            <div class="input-subscribe">
+              <input
+                type="email"
+                v-model.trim="term"
+                @keyup.enter="uploadMail"
+                placeholder="Enter Your Mail Address"
+                required
+              />
+              <button type="button" class="bg-blue" @click="uploadMail">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>
@@ -48,28 +47,26 @@ export default {
   data() {
     return {
       term: "",
-       alertActive: false,
+      alertActive: false,
     };
   },
   methods: {
-
-
-     uploadMail() {
+    uploadMail() {
       //CONTROLLO//
       const lowerTerm = this.term.toLowerCase();
-      if(!lowerTerm) return;
+      if (!lowerTerm) return;
 
       //CONTROLLO//
-        if (!lowerTerm.includes("@")) {
+      if (!lowerTerm.includes("@")) {
         return alert("inserisci email valida");
       }
 
       this.alertActive = true;
       setTimeout(() => {
         this.alertActive = false;
-        this.term = '';
-      }, 3000);
-    }, 
+        this.term = "";
+      }, 4000);
+    },
   },
 };
 </script>
@@ -78,7 +75,7 @@ export default {
 @import "../assets/scss/style.scss";
 
 /* alert */
- .layover {
+.layover {
   width: 100%;
   position: fixed;
   top: 0;
@@ -89,22 +86,30 @@ export default {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.411);
+  z-index: 1;
 
   .alert {
-    width: 680px;
-    height: 80px;
-    border-radius: 20px;
-    box-shadow: 0 0 15px 0 black;
-    border: 2px solid white;
-    background: linear-gradient(
-      270deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(36, 36, 115, 1) 0%,
-      rgba(0, 160, 186, 1) 100%
-    );
-    color: $bg-white;
+    width: 663px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: $bg-blue;
+    color: white;
+    overflow: hidden;
+    border: 1px solid white;
+
+    .main-alert {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    i {
+      border: 2px solid white;
+      border-radius: 50%;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
   }
-} 
+}
 
 #subscribe {
   height: 400px;

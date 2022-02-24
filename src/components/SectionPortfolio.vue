@@ -137,9 +137,12 @@ i {
   cursor: pointer;
   border: 0;
   min-width: 450px;
+
   &.opacity {
     opacity: 0.7;
   }
+
+
 
   &:hover.bg-red {
     background: linear-gradient(
@@ -150,6 +153,7 @@ i {
     );
     color: white;
   }
+
 }
 
 .overflow {
