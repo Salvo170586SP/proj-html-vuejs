@@ -85,18 +85,18 @@ export default {
       if (this.currentIndex === 0) {
         this.currentIndex = this.slidersCards.length - 1;
       } else {
-        this.currentIndex--;
+         this.currentIndex--;
         const content = document.querySelector(".wrapper-box");
-        content.scrollLeft -= 50;
+        content.scrollLeft -= 150;
        }
     },
     nextPic() {
       if (this.currentIndex === this.slidersCards.length - 1) {
-        this.currentIndex = 0;
+         this.currentIndex = 0;
       } else {
-        this.currentIndex++;
+       this.currentIndex++;
         const content = document.querySelector(".wrapper-box");
-        content.scrollLeft += 50;
+        content.scrollLeft += 150;
       }
     },
     dotActive(index) {
@@ -131,7 +131,6 @@ i {
   border-radius: 50%;
   padding: 15px;
 }
-
 
 .card {
   border-radius: 20px;

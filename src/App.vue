@@ -104,16 +104,22 @@ footer{
   right: 100px;
   color: $bg-blue;
   cursor: pointer;
+  z-index: 10;
 }
 
 .assistant{
   background-color: $btn-blue;
-  padding: 25px;
   border-radius: 50%;
   position: fixed;
   right: 20px;
   bottom: 20px;
   color: $bg-white;
+  z-index: 10;
+  height: 60px;
+  width:60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 </style>
