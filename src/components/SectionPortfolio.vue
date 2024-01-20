@@ -22,7 +22,7 @@
             class="card bg-red"
             v-for="(card, index) in slidersCards"
             :key="index"
-            :class="{ opacity: cardActive(index) }"
+            :class="{ opacity: cardActive(index) }"  
           >
             <figure>
               <img class="img-fluid" :src="card.url" alt="" />
@@ -35,17 +35,16 @@
         </div>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-12 p-5 d-flex justify-content-center">
-          <!-- dot-img -->
-          <div
+           <div
             v-for="(card, index) in slidersCards"
             :key="index"
             class="dot-img"
             :class="{ active: dotActive(index) }"
           ></div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -82,26 +81,26 @@ export default {
   },
   methods: {
     prevPic() {
-      if (this.currentIndex === 0) {
+      /* if (this.currentIndex === 0) {
         this.currentIndex = this.slidersCards.length - 1;
-      } else {
+      } else { */
          this.currentIndex--;
         const content = document.querySelector(".wrapper-box");
-        content.scrollLeft -= 150;
-       }
+        content.scrollLeft -= 750;
+      /*  } */
     },
     nextPic() {
-      if (this.currentIndex === this.slidersCards.length - 1) {
+      /* if (this.currentIndex === this.slidersCards.length - 1) {
          this.currentIndex = 0;
-      } else {
+      } else { */
        this.currentIndex++;
         const content = document.querySelector(".wrapper-box");
-        content.scrollLeft += 150;
-      }
+        content.scrollLeft += 750;
+     /*  } */
     },
-    dotActive(index) {
-      return this.currentIndex === index;
-    },
+   /*  dotActive(index) {
+      return this.currentIndex == index;
+    }, */
     cardActive(index) {
       return this.currentIndex !== index;
     },
@@ -119,6 +118,7 @@ export default {
   flex-direction: column;
 }
 
+
 span {
   color: $red-span;
 }
@@ -131,6 +131,16 @@ i {
   border-radius: 50%;
   padding: 15px;
 }
+
+::-webkit-scrollbar {
+  height: 9px; /* Altezza della barra di scorrimento */
+  background-color: rgb(255, 0, 0);
+}
+ ::-webkit-scrollbar-thumb {
+  background-color: #510202;  
+  border-radius: 9px;
+}
+
 
 .card {
   border-radius: 20px;
@@ -152,10 +162,15 @@ i {
     margin-top: -20px;
     transition: 0.4s;
    }
-}
+   
+     .card-wrapper {
+     display: flex; /* Utilizza un layout flessibile per le card */
+     transition: transform 0.5s ease; /* Aggiunge una transizione al movimento del wrapper */
+   }
+  }
 
 .overflow {
-  overflow: hidden;
+  overflow: auto;
 }
 
 figure {
