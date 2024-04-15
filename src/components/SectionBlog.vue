@@ -14,10 +14,10 @@
       </div>
 
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6 my-2">
           <!-- card blog -->
-          <div class="card-blog bg-img d-flex align-items-end p-3 text-white">
-            <div class="text-card w-text">
+          <div class="card-blog bg-img d-flex flex-column flex-md-row align-items-start align-items-md-end justify-content-center p-5 text-white">
+            <div class="text-card w-text d-flex flex-column">
               <span>April 21, 2019 &#8226; by Paul</span>
               <h5>Amazon gets CCI nod to aquire 49% stake in</h5>
               <p>
@@ -25,8 +25,8 @@
                 meridian sun strikes the upper surface.
               </p>
             </div>
-            <div class="link-card w-link mb-5">
-              <a class="bg-white" href="#">Read More</a>
+            <div class="w-100 link-card w-link my-5 mx-md-5">
+              <a class="w-100 bg-white" href="#">Read More</a>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default {
 @import "../assets/scss/style.scss";
 
 #blog {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   background-color: $bg-lightwhite;

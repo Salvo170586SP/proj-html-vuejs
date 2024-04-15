@@ -13,7 +13,7 @@
 
       <div class="row text-center">
         <!-- card-price -->
-        <div class="col-4">
+        <div class="col-12 col-md-4 my-2">
           <div class="card-price bg-white radius-25 p-2">
             <span class="bg-numb">40</span>
             <div class="row">
@@ -45,7 +45,7 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-md-4 my-2">
           <div class="card-price red-card text-white radius-25 p-2">
             <span class="bg-numb">60</span>
             <div class="row">
@@ -77,7 +77,7 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-md-4 my-2">
           <div class="card-price bg-white radius-25 p-2">
             <span class="bg-numb">80</span>
             <div class="row">
@@ -122,7 +122,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/style.scss";
 #price-list {
-  height: 100vh;
+ /*  height: 100vh; */
   background-image: linear-gradient(to bottom, $bg-blue 60%, $bg-lightwhite 50%);
 
   .card-price {

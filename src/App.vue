@@ -58,8 +58,7 @@ export default {
         { url: "#", text: "Services", active: false },
         { url: "#", text: "Blog", active: false },
         { url: "#", text: "Contact", active: false },
-        { url: "#", text: "Portfolio", active: false },
-      ],
+       ],
 
       quickLinks:[
         {url:'#', text: 'Services', active: false},
@@ -87,7 +86,7 @@ export default {
 /* HEADER */
 header {
   background-color: $bg-blue;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 footer{

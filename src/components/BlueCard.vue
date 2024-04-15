@@ -1,6 +1,6 @@
 <template>
   <!-- card-blog blue -->
-         <div class="col-3">
+         <div class="col-12 col-md-3 my-2">
           <div class="card-blog bg-blue text-white p-5">
             <div class="text-card mb-4">
               <span>{{card.date}}</span>

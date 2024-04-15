@@ -16,7 +16,7 @@
     <!-- cards portfolio -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 d-flex overflow wrapper-box py-5">
+        <div class="col-12   d-flex overflow wrapper-box py-5">
           <!-- card -->
           <div
             class="card bg-red"
@@ -112,7 +112,7 @@ export default {
 @import "../assets/scss/style.scss";
 
 #portfolio {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -147,7 +147,7 @@ i {
   text-align: center;
   cursor: pointer;
   border: 0;
-  min-width: 550px;
+  min-width: 450px;
   margin-right: 40px;
   z-index: 1;
 

@@ -14,7 +14,7 @@
       </div>
 
       <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <!-- card testimonial -->
           <div
             class="card-testimonial py-5 d-flex flex-column align-items-center"
@@ -46,7 +46,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <!-- card testimonial -->
           <div
             class="card-testimonial py-5 d-flex flex-column align-items-center"
@@ -78,7 +78,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <!-- card testimonial -->
           <div
             class="card-testimonial py-5 d-flex flex-column align-items-center"
@@ -111,14 +111,24 @@
           </div>
         </div>       
       </div>
-      <div class="row">
-          <div class="col-12 my-5  d-flex align-items-center justify-content-between">
-            <img src="../assets/images/client-1-1.png" alt="golden logo" />
-            <img src="../assets/images/clienty-2.png" alt="sweety logo" />
-            <img src="../assets/images/clienty-4.png" alt="fastlane logo" />
-            <img src="../assets/images/client-5.png" alt="mighty logo" />
-            <img src="../assets/images/clienty-3.png" alt="jr logo" />
-          </div>
+      <div class="row justify-content-between gap-5">
+        <div class="col-12 col-md-2 d-flex justify-content-center">
+          <img class="img-fluid" src="../assets/images/client-1-1.png" alt="golden logo" />
+        </div>
+        <div class="col-12 col-md-2 d-flex justify-content-center">
+          <img class="img-fluid" src="../assets/images/clienty-2.png" alt="sweety logo" />
+
+        </div>
+        <div class="col-12 col-md-2 d-flex justify-content-center">
+          <img class="img-fluid" src="../assets/images/clienty-4.png" alt="fastlane logo" />
+        </div>
+        <div class="col-12 col-md-2 d-flex justify-content-center">
+          <img class="img-fluid" src="../assets/images/client-5.png" alt="mighty logo" />
+
+        </div>
+        <div class="col-12 col-md-2 d-flex justify-content-center">
+          <img class="img-fluid" src="../assets/images/clienty-3.png" alt="jr logo" />
+        </div>
         </div>
     </div>
   </section>
@@ -134,7 +144,7 @@ export default {
 @import "../assets/scss/style.scss";
 
 #testimonial{
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   background-color: $bg-lightwhite;

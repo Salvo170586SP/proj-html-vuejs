@@ -16,7 +16,7 @@
           <ServiceCards v-for="(card, index) in servicesCards" :key="index" :card="card" />
       </div>
       <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center py-5">
           <a class="bg-red" href="#">View All Services</a>
         </div>
       </div>

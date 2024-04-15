@@ -3,15 +3,15 @@
     <div class="container">
       <!-- image section -->
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6 ">
           <figure class="z-index">
-            <img class="front-img" src="../assets/images/men-data.png" alt="men data" />
+            <img class="front-img img-fluid p-5" src="../assets/images/men-data.png" alt="men data" />
           </figure>
           <figure>
-            <img class="back-img" src="../assets/images/nemoodar.png" alt="nemooadar" />
+            <img class="back-img img-fluid p-5" src="../assets/images/nemoodar.png" alt="nemooadar" />
           </figure>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <!-- text section -->
           <div class="row">
             <div class="col-12 text-white">Start Your Project</div>
@@ -47,8 +47,8 @@ export default {
 
 #your-project {
   background-color: $bg-blue;
-  height: 100vh;
-
+  /* height: 100vh; */
+  padding:  100px 20px;
   figure {
     width: 400px;
     position: relative;
